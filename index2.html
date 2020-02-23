@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <title>POS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagemode" content="force">
+    <meta name="format-detection" content="telephone=no" >
+    <meta content="width=device-width,height=device-height,initial-scale=1.0, maximum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/simple-line-icons/simple-line-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css"/>
+    <!--[if lt IE 9]>
+        <script src="plugins/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="plugins/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->        
+<body>
+    <div class="container-fluid">
+        <div class="row height-100">
+            <div class="col-xs-4 col-sm-4 left height-100">
+                <div class="row height-100">
+                    <div class="col-xs-12 header">
+                        <img src="images/logo.png" style="margin: 3px 0;" >
+                    </div>
+                    <div class="col-xs-12 info">
+                        <p><i class="icon-user"></i><span>黑侠（光谷店）</span></p>
+                        <p><i class="icon-clock"></i><span>2016-04-06 10:23 AM</span></p>
+                    </div>
+
+                    <div class="col-xs-12 tableBg" style="padding:0px;">
+                        <table class="table jiesuan">
+                            <caption class="title"><i class="icon-notebook"></i><span>收支明细</span></caption>
+                            <thead>
+                            <tr>
+                                <th>品名</th>
+                                <th>数量</th>
+                                <th>金额</th>
+                                <th style="padding-right:40px;">结算价</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>蛋挞</td>
+                                <td>5</td>
+                                <td>60</td>
+                                <td>60</td>
+                            </tr>
+                            <tr>
+                                <td>金麦面包</td>
+                                <td>1</td>
+                                <td>10.5</td>
+                                <td>10.5</td>
+                            </tr>
+                            <tr>
+                                <td>威风蛋糕</td>
+                                <td>1</td>
+                                <td>20</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>三明治</td>
+                                <td>5</td>
+                                <td>60</td>
+                                <td>60</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-xs-12 shouyin text-center">
+                        <p><strong>总额：￥125.5</strong></p>
+                        <button type="button" class="btn btn-primary btn-lg"><i class="icon-diamond"></i>&nbsp;收银</button>
+                        <form class="form-inline">
+                            <div class="form-group" style="position: relative;">
+                                <label class="control-label sr-only" for="inputSuccess5">Hidden label</label>
+                                <input type="text" class="form-control" id="inputSuccess5" aria-describedby="inputSuccess5Status" placeholder="搜索商品">
+                                <span class="glyphicon glyphicon-remove-circle form-control-feedback" aria-hidden="true"></span>
+                                <span id="inputSuccess5Status" class="sr-only">(success)</span>
+                            </div>
+                            <button id="search"><span class="glyphicon glyphicon-search" ></span></button>
+                        </form>
+                        <div class="col-xs-12">
+                            <p>会员信息:</p>
+                        </div>
+                    </div>
+                    <div class="leftBar">
+                        <img src="images/X.png" alt=""/>
+                        <img src="images/add.png" alt=""/>
+                        <img src="images/sub.png" alt=""/>
+                        <img src="images/song.png" alt=""/>
+                        <img src="images/xiu.png" alt=""/>
+                        <img src="images/gua.png" alt=""/>
+                        <img src="images/jiqi.png" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-8 col-sm-8 right height-100">
+                <div class="row height-100">
+                    <div class="col-xs-12 header"></div>
+                    <div class="col-xs-12 info">
+                        <div class="col-xs-offset-1 col-xs-11">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tc10">戚风蛋糕</a></li>
+                                <li><a data-toggle="tab" href="#tc20">蛋挞</a></li>
+                                <li><a data-toggle="tab" href="#tc30">全麦面包</a></li>
+                                <li><a data-toggle="tab" href="#tc30">戚风蛋糕</a></li>
+                                <li><a data-toggle="tab" href="#tc30">三明治</a></li>
+                                <li><a data-toggle="tab" href="#tc30"><img src="images/update.png" alt=""/></a></li>
+                            </ul>
+                            <!--每个标签页对应一个面板-->
+                            <div class="tab-content  col-xs-12">
+                                <div id="tc10" class="row tab-pane active fade in">
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list active">
+                                            <span class="huodong"></span>
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <span class="huodong"></span>
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tc20" class="row tab-pane fade in">
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list active">
+                                            <span class="huodong"></span>
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tc30" class="row tab-pane fade in">
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list active">
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <span class="huodong"></span>
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="col-xs-12 list">
+                                            <p>001</p>
+                                            <p>巧克力蛋糕</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 footer">
+                        <ul>
+                            <li><a href="#"><img src="images/manage.png" alt=""/></a></li>
+                            <li><a href="#"><img src="images/shop.png" alt=""/></a></li>
+                            <li><a href="#"><img src="images/huiyuan.png" alt=""/></a></li>
+                            <li><a href="#"><img src="images/chuxiao.png" alt=""/></a></li>
+                            <li><a href="#"><img src="images/yuding.png" alt=""/></a></li>
+                            <li><a href="#"><img src="images/jiaoban.png" alt=""/></a></li>
+                            <li><a href="#"><img src="images/guadan.png" alt=""/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="plugins/jquery/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script>
+    document.documentElement.style.fontSize = $(document.documentElement).width()/10.24 + 'px';
+    $(window).on('resize', function() {
+        document.documentElement.style.fontSize = $(document.documentElement).width()/10.24 + 'px';
+    })
+</script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

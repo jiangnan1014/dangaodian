@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>预定</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/cui.css" />
+    <link rel="stylesheet" href="css/lib.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="hd" class="fix">
+        <a class="back" href=""></a>
+        <h1>预定</h1>
+    </div>
+    <!-- 头部 end -->
+
+    <div id="bd" class="fullBd fix">
+        <div class="pd12">
+            <div class="m-box4 bgf">
+                <table class="g-table3">
+                    <tr>
+                        <th>客户名称</th>
+                        <td style="padding-right: 80px;"><input type="text" class="inp"></td>
+                        <th>商品名称</th>
+                        <td style="padding-right: 80px;"><input type="text" class="inp"></td>
+                        <th>客户电话</th>
+                        <td><input type="text" class="inp"></td>
+                    </tr>
+                    <tr>
+                        <th>订单金额</th>
+                        <td style="padding-right: 80px;"><input type="text" class="inp"></td>
+                        <th>预付金额</th>
+                        <td style="padding-right: 80px;"><input type="text" class="inp"></td>
+                        <th>提货时间</th>
+                        <td class="posr"><input type="text" class="inp inp-date" id="date-pick" name="datepicker" value=""></td>
+                    </tr>
+                    <tr>
+                        <th>提货门店</th>
+                        <td style="padding-right: 80px;"><input type="text" class="inp" value="光谷店"></td>
+                        <th></th>
+                        <td style="padding-right: 80px;"></td>
+                        <th></th>
+                        <td><input type="submit" value="保存并新增" class="g-btn2 r"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <table class="g-table4">
+            <thead>
+                <tr>
+                    <th width="120">客户</th>
+                    <th>品名</th>
+                    <th>金额</th>
+                    <th>提货时间</th>
+                    <th>处理</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="Calendar" class="fancyBox">
+        <div class="hd g-tit2">
+            <a href="javascript:void(0);" class="fancyClose r"></a>
+            <h3>日期</h3>
+        </div>
+        <div class="bd">
+            
+        </div>
+        <div class="fd">
+            <a href="" class="g-btn4">确定</a>
+        </div>
+    </div>
+
+    <div id="datePlugin"></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/lib.js"></script>
+
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/date.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#date-pick').date();
+    });
+    </script>
+    
+</body>
+</html>

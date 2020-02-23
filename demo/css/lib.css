@@ -1,0 +1,229 @@
+
+/*初始化*/
+h1,h2,h3,h3,h4,h5,h6{font-weight: normal;}
+body{color: #333;font-family:"微软雅黑","Microsoft Yahei";
+    background: url(../images/bg1.jpg) repeat left top;
+}
+*{
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;
+}
+img{max-width: 100%;height:auto;}
+a img{
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+input{font-family:"微软雅黑","Microsoft Yahei";}
+input::-webkit-input-placeholder {color: #d7aa75;}
+input::-moz-placeholder {color: #d7aa75; }
+input::-ms-input-placeholder {color: #d7aa75;}
+
+input[type="button"],
+input[type="submit"]{cursor: pointer;}
+button{cursor: pointer;}
+a:hover img{
+    opacity: .8;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity= 80)';
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+input[type="button"],input[type="submit"],input[type="reset"],
+button,input[type="radio"],input[type='checkbox']{
+    font-family:"微软雅黑","Microsoft Yahei";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+a{color: #333;}
+a:hover{color: #007791;}
+
+html,body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    margin:0 auto;
+    /*overflow: hidden;*/
+}
+
+/*******************************
+    -------[=布局]-------
+********************************/
+.wrap{width: 1024px;margin: 0 auto;overflow: hidden;}
+.h30{height: 30px;}
+.h40{height: 40px;}
+.h50{height: 50px;}
+
+
+/*******************************
+    -------[=头部]-------
+********************************/
+#hd{position: absolute;left:0;top:0;width: 100%;z-index: 9;
+    height: 50px;line-height: 44px;text-align: center;
+    padding-bottom: 6px;background: url(../images/bg-top.png) repeat-x left top;
+}
+#hd .back{position: absolute;left:13px;top:0;width: 46px;height: 44px;
+    background: url(../images/btn-back.png) no-repeat left center;
+}
+#hd .btn{position: absolute;right: 13px;top: 0;height: 44px;}
+#hd .btn a{display: inline-block;width: 58px;height: 44px;
+    font-size: 14px;color: #fff;background: url(../images/btn1.png) no-repeat center;
+}
+#hd .btn a:hover{color: #eee;}
+#hd h1{font-size: 16px;color: #f6eac2;text-shadow: 0 1px 1px #000;}
+
+/*******************************
+    -------[=左导航块]-------
+********************************/
+#nav{position: absolute;left:0;top:44px;bottom:0;background: #7a4a46;width: 140px;z-index: 2;
+    box-shadow: 2px 0 10px #666;padding-top: 8px;font-size: 14px;
+}
+#nav li a{display: block;line-height: 30px;padding-left: 20px;color: #cdced0;}
+#nav li.on a{background-color: #c43b29;}
+
+/*******************************
+    -------[=右内容块]-------
+********************************/
+#bd{position: absolute;left:140px;right:0;top:44px;bottom:0;overflow: auto;background: #f7e9c2;z-index: 1;}
+#bd.bd-full{left: 0;}
+
+/*满宽内容块*/
+#bd.fullBd{left:0;z-index: 1;}
+
+/*******************************
+    -------[=收银布局]-------
+********************************/
+#aside{background-color: #f6eac2;position: fixed;left: 10px;top: 55px;bottom: 95px;width: 285px;
+    box-shadow: 0 2px 10px #ccc;border-radius: 5px 5px 0 0;
+}
+#main{position: fixed;left: 305px;top: 55px;bottom: 95px;right: 15px;}
+#main .main-cont{position: absolute;left: 0;right: 0;bottom: 0;top: 39px;
+    background-color: #f6eac2;box-shadow: 0 2px 10px #ccc;
+}
+.m-cont{max-width: 705px;}
+
+#main-full{position: absolute;left: 0;right: 0;top: 70px;bottom: 20px;}
+
+/*******************************
+    -------[=键盘]-------
+********************************/
+#keyboard{position: fixed;left:0;bottom:0;width: 100%;text-align: center;font-size: 22px;
+    background: #302a22;padding: 12px 0 10px 0;height: 81px;z-index: 9;
+}
+#keyboard ul{display: inline-block;*display: inline;zoom:1;}
+#keyboard li{float: left;margin: 0 5px;min-width: 59px;height: 59px;line-height: 59px;
+    background: url(../images/bg-btn1.jpg) repeat-x left top;border-radius: 4px;
+}
+#keyboard li a{display: block;}
+#keyboard .btn{font-size: 20px;}
+#keyboard .cf_btn{width: 130px;}
+
+/*******************************
+    -------[=弹出]-------
+********************************/
+.overlay{position: fixed;left: 0;top: 0;right: 0;bottom: 0;z-index: 98;
+    background-color: #000;opacity: .7;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity= 70)';
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 70);
+}
+.fancyBox{position: fixed;left: 50%;top: 50%;z-index: 99;display: none;
+    width: 560px;background-color: #fff;
+}
+.fancyBox .fancyClose{width: 30px;height: 40px;display: inline-block;
+    background: url(../images/ico-close.png) no-repeat center;
+}
+.fancyBox .m-ok{padding: 0;margin-bottom: 20px;}
+.fancyBox .hd{position: relative;z-index: 2;}
+.fancyBox .bd{padding: 20px 50px;min-height: 250px;}
+.fancyBox .fd{height: 60px;text-align: center;border-top: 1px solid #f0ce9b;
+    background: url(../images/bg-bot.jpg) repeat-x left top;
+    box-shadow:  0 -2px 5px #e0d5b1;line-height: 60px;
+}
+.fancyBox .body{min-height: 395px;position: relative;}
+
+
+/*******************************
+    -------[=主内容]-------
+********************************/
+/*按钮*/
+.g-btn1{display: block;text-align: center;border: 1px solid #892114;border-radius: 2px;
+    font-size: 24px;color: #f6eac2;box-shadow: 0 2px 5px #a9a185;text-shadow:0 0 1px #000;
+    line-height: 50px;background: url(../images/bg-btn3.jpg) repeat-x left top;
+}
+input.g-btn1{width: 100%;}
+
+.g-btn2{display: block;min-width: 80px;text-align: center;border: 1px solid #892114;border-radius: 2px;
+    font-size: 18px;color: #f6eac2;box-shadow: 0 2px 5px #a9a185;text-shadow:0 0 1px #000;
+    height: 35px;line-height: 33px;background: url(../images/bg-btn3.jpg) repeat-x left top;
+}
+
+.g-btn3{display: block;width: 80px;text-align: center;border: 1px solid #892114;border-radius: 2px;
+    font-size: 18px;color: #f6eac2;box-shadow: 0 2px 5px #a9a185;text-shadow:0 0 1px #000;
+    height: 80px;line-height: 78px;background: url(../images/bg-btn3.jpg) repeat-x left top;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.g-btn4{color: #fff;line-height: 33px;display: inline-block;
+    padding: 0 25px;box-shadow: 0 2px 5px #b4b4ae;border-radius: 3px;
+    border: 1px solid #892114;font-size: 14px;
+    background: url(../images/bg-btn3.jpg) repeat-x left top;
+}
+.g-btn4:hover{color: #fff;}
+
+.g-btn5{background-color: #f90;color: #fff;border: 1px solid #dc901d;line-height: 33px;display: inline-block;
+    padding: 0 25px;box-shadow: 0 2px 5px #b4b4ae;border-radius: 3px;font-size: 14px;
+}
+.g-btn5:hover{color: #fff;background-color: #f90;}
+
+.g-btn6{line-height: 26px;border: 1px solid #e28a7e;border-radius: 3px;
+    background-color: #fdbab1;color: #b62a1b;display: inline-block;padding: 0 8px;
+}
+.g-btn6:hover{color: #b62a1b;}
+
+.g-btn{width: 58px;height: 35px;font-size: 14px;color: #fff;
+    text-align: center;line-height: 35px;
+    background: url(../images/btn1.png) no-repeat center;
+}
+.g-btn:hover{color: #eee;}
+
+.refreshBtn{display: inline-block;width: 55px;height: 30px;
+    background: url(../images/btn-refresh.png) no-repeat left center;
+}
+.addBtn{display: inline-block;width: 36px;height: 36px;
+    background: url(../images/btn-add.png) no-repeat center;
+}
+.saveBtn{display: inline-block;width: 55px;height: 47px;
+    background: url(../images/btn-save.png) no-repeat center;
+}
+.printBtn{display: inline-block;width: 55px;height: 30px;
+    background: url(../images/btn-print.png) no-repeat left center;
+}
+
+/*标题*/
+.g-tit1{font-size: 14px;font-weight: bold;padding: 0 10px;line-height: 47px;border-bottom: 1px dashed #f0ce9b;}
+.g-tit1 h4{font-size: 14px;font-weight: bold;}
+
+.g-tit2{height: 45px;line-height: 40px;margin-top: -1px;
+    color: #fff;font-size: 14px;padding: 0 10px 5px;
+    background: url(../images/bg-tit.png) repeat-x left top;
+}
+.g-tit2 h3{font-size: 14px;}
+
+/*padding*/
+.pd12{padding: 12px;}
+.posr{position: relative;}
+
+/*背景色*/
+.bg_yellow{background-color: #f6eac2;}
+.bgf{background-color: #fff;}
+
+.f18{font-size: 18px;}
+.fc-red{color: #b82a1c;}

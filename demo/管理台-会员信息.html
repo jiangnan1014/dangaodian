@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>管理台-会员信息</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/cui.css" />
+    <link rel="stylesheet" href="css/lib.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="hd" class="fix">
+        <a class="back" href=""></a>
+        <h1>管理台</h1>
+    </div>
+    <!-- 头部 end -->
+
+    <!-- 左侧菜单 -->
+    <div id="nav" class="fix">
+        <ul>
+            <li><a href="管理台-非交易信息.html">非交易信息</a></li>
+            <li><a href="管理台-商品查询.html">商品查询</a></li>
+            <li class="on"><a href="管理台-会员信息.html">会员信息</a></li>
+            <li><a href="管理台-交易查询.html">交易查询</a></li>
+            <li><a href="管理台-要货管理.html">要货管理</a></li>
+            <li><a href="管理台-到货管理.html">到货管理</a></li>
+            <li><a href="管理台-退货管理.html">退货管理</a></li>
+            <li><a href="管理台-订货管理.html">订货管理</a></li>
+            <li><a href="管理台-盘点库存.html">盘点库存</a></li>
+        </ul>
+    </div>
+    <!-- 左侧菜单 end -->
+
+    <!-- 右侧内容 -->
+    <div id="bd" class="fix">
+        <div class="g-cur">
+            <a href="">会员信息</a> &gt; <span>基本信息</span>
+        </div>
+        <div class="pd12">
+            <div class="m-box4 bgf">
+                <form action="">
+                <div class="m-search">
+                    <div class="inp-box l">
+                        <input type="text" class="inp mb0" placeholder="输入会员卡号/手机号">
+                        <input type="submit" value="检索" class="btn g-btn2">
+                    </div>
+                    <a href="#AddUser" class="g-btn5 fancyBtn">新增会员</a>
+                </div>
+                <table class="g-table5">
+                    <tr>
+                        <th>会员卡号</th>
+                        <td>无</td>
+                        <th>手机号</th>
+                        <td>无</td>
+                        <th>会员级别</th>
+                        <td>无</td>
+                    </tr>
+                    <tr>
+                        <th>可用余额</th>
+                        <td>0.00 <a href="#Recharge" class="g-btn6 fancyBtn">充值</a></td>
+                        <th>可用积分</th>
+                        <td>0 <a href="#Exchange" class="g-btn6 fancyBtn">兑换奖品</a></td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </div>
+        <div class="h"></div>
+
+        <div class="g-tab">
+            <ul>
+                <li class="on"><a href="">充值记录</a></li>
+                <li><a href="">消费记录</a></li>
+                <li><a href="">兑换记录</a></li>
+            </ul>
+        </div>
+        <table class="g-table4">
+            <thead>
+                <tr>
+                    <th width="80">序号</th>
+                    <th>单据编号</th>
+                    <th>申请单位</th>
+                    <th>到货期限</th>
+                    <th>发货单位</th>
+                    <th>到货时间</th>
+                    <th>单据状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><a href="">签收</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- 右侧内容 end -->
+
+    <!-- 弹出 -->
+    <!-- 新增会员 -->
+    <div id="AddUser" class="fancyBox">
+        <div class="hd g-tit2">
+            <a href="javascript:void(0);" class="fancyClose r"></a>
+            <h3>新增会员</h3>
+        </div>
+        <div class="bd">
+            <form action="">
+            <div class="m-ok">
+                <h3><img src="images/ico-ok.png" alt="">支付成功</h3>
+            </div>
+            <table class="g-table6">
+                <tr>
+                    <th width="80">会员卡号</th>
+                    <td><input type="text" class="inp" placeholder="输入会员卡号"></td>
+                </tr>
+                <tr>
+                    <th>手机号码</th>
+                    <td><input type="text" class="inp" placeholder="输入手机号"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="h30"></div>
+                        <div class="tc">
+                            <input type="submit" value="保存" class="g-btn4">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+
+    <!-- 会员充值 -->
+    <div id="Recharge" class="fancyBox">
+        <div class="hd g-tit2">
+            <a href="javascript:void(0);" class="fancyClose r"></a>
+            <h3>会员充值</h3>
+        </div>
+        <div class="bd">
+            <form action="">
+            <div class="m-ok">
+                <h3><img src="images/ico-ok.png" alt="">支付成功</h3>
+            </div>
+            <table class="g-table6">
+                <tr>
+                    <th width="120">会员卡号/手机号</th>
+                    <td><input type="text" class="inp"></td>
+                </tr>
+                <tr>
+                    <th>充值金额</th>
+                    <td><input type="text" class="inp"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="h30"></div>
+                        <div class="tc">
+                            <input type="submit" value="保存" class="g-btn4">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </div>
+
+    <!-- 兑换奖品 -->
+    <div id="Exchange" class="fancyBox bg_yellow">
+        <div class="hd g-tit2">
+            <a href="javascript:void(0);" class="fancyClose r"></a>
+            <h3>会员验证</h3>
+        </div>
+        <div class="bd">
+            <form action="">
+            <div class="h20"></div>
+            <div class="m-filter">
+                <div class="inp-box">
+                    <input type="text" class="inp" placeholder="输入会员卡号或电话号码">
+                    <input type="text" class="inp" placeholder="密码">
+                    <input type="submit" value="检索" class="btn g-btn3">
+                </div>
+                <div class="m-box3">
+                    <table class="g-table2">
+                        <tr>
+                            <th>会员卡号</th>
+                            <td>无</td>
+                        </tr>
+                        <tr>
+                            <th>联系方式</th>
+                            <td>无</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="h30"></div>
+            <div class="h50"></div>
+            </form>
+        </div>
+        <div class="fd">
+            <a href="#ExchangeClass" class="g-btn4 fancyBtn">确定</a>
+        </div>
+    </div>
+
+    <!-- 兑换奖品-分类 -->
+    <div id="ExchangeClass" class="fancyBox">
+        <div class="hd g-tit2">
+            <a href="javascript:void(0);" class="fancyClose r"></a>
+            <h3>标题名称</h3>
+        </div>
+        <div class="body posr">
+            <div class="side">
+                <dl>
+                    <dt>分类列表</dt>
+                    <dd class="on"><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                    <dd><a href="">选项4</a></dd>
+                    <dd><a href="">选项5</a></dd>
+                </dl>
+            </div>
+            <div class="main">
+                <ul class="m-gift-ul">
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li class="on">
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" name="gift"></label>
+                        <em>0001</em>
+                        <h4>毛毛虫</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fd">
+            <a href="#Category" class="g-btn4 fancyBtn">确定</a>
+        </div>
+    </div>
+
+    <!-- 分类 -->
+    <div id="Category" class="fancyBox">
+        <div class="hd g-tit2">
+            <a href="javascript:void(0);" class="fancyClose r"></a>
+            <h3>分类列表</h3>
+        </div>
+        <div class="bd">
+            <ul class="m-gift-ul">
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li class="on">
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="gift"></label>
+                    <em>0001</em>
+                    <h4>毛毛虫</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="fd">
+            <a href="" class="g-btn4">确定</a>
+        </div>
+    </div>
+
+    <!-- 弹出 end -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/lib.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('body').on('click','.m-gift-ul li',function(){
+            $(this).toggleClass('on');
+        });
+    });
+    </script>
+    
+</body>
+</html>

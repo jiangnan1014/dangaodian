@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8"/>
+    <title>POS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="imagemode" content="force">
+    <meta name="format-detection" content="telephone=no" >
+    <meta content="width=device-width,height=device-height,initial-scale=1.0, maximum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+     <!--[if lt IE 9]>
+        <script src="plugins/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="plugins/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+    <style>
+       html {
+            height: 100%;
+            width: 100%;
+            font-family: 'Heiti SC', 'Microsoft YaHei';
+            font-size: 20px;
+            overflow: hidden;
+            outline: 0;
+            -webkit-text-size-adjust:none;
+        }
+    *{margin:0px;padding:0px;box-sizing: border-box;}
+    .viewport{max-width:6.4rem;height:100%;margin:0 auto;}
+    .header{height:35px;background:#333;text-align:center;line-height:35px;font-size:16px;color:white; }
+    .sectionOne{width:1rem;height:1rem;background:#666;display:inline-block;overflow:hidden;font-size:0;margin-top:0.2rem;}
+     .content{font-size:0px;}
+    .last{margin-right:0rem !important;}
+    </style>      
+<body>
+   <div class="viewport">
+        <div class='header'>
+            首页
+        </div>
+        <div class="content">
+            <div class="sectionOne">
+            </div>
+            <div class="sectionOne">
+            </div>
+            <div class="sectionOne last">
+            </div>
+            <div class="sectionOne">
+            </div>
+            <div class="sectionOne">
+            </div>
+            <div class="sectionOne last">
+            </div>
+        </div>
+   </div>
+    
+    <script src="plugins/jquery/jquery-3.0.0.min.js" type="text/javascript"></script>
+    <script>
+    document.documentElement.style.fontSize = $(document.documentElement).width()/3.75 + 'px';
+    $(window).on('resize', function() {
+        document.documentElement.style.fontSize = $(document.documentElement).width()/3.75 + 'px';
+    })
+</script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

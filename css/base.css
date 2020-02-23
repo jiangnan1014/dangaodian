@@ -1,0 +1,143 @@
+body{background-image:url("../images/bg.jpg");}
+.container-fluid{
+    max-width:1024px;
+    margin:0 auto;
+    max-height:768px;
+  }
+.left{width:30%!important;}
+.right{width:70% !important;height: 100%;position:absolute;left:30%;}
+.leftLogo{height:45px;background:url('../images/bg01.png') -4px 0px; }
+.lef{float:left;position:absolute;left:0;}
+.right{float:right;}
+.margin-top-18{margin-top:18px}
+.leftHeader{
+    height:64px;background:url('../images/01.jpg');
+}
+.leftHeader span{display:inline-block;}
+.userIcon{background:url("../images/user.png") no-repeat;margin-top:5px;}
+.userIcon p{margin-bottom:5px; }
+.timeIcon{background:url("../images/time.png") no-repeat;}
+.line-height-center{vertical-align: middle;}
+.leftHeader p{padding-left:30px;color:#ecbd85;}
+.incomeDetail{
+    height:44px;background:url("../images/left01png.png");padding-top:10px;
+}
+.incomeIcon{background:url("../images/income.png") 0px 3px no-repeat}
+.padding-left-30{
+    padding-left:30px;
+}
+.incomeDetail p{color:white;}
+.incomeContent{height:368px;background:url("../images/bg02.png")}
+.incomeFirst{width:100%;padding-left:15px;padding-right:15px;}
+table{border-color:transparent !important;}
+.col-xs-12{padding:0 !important;}
+tr{background:url("../images/line.png");}
+.padding-left-10{
+    padding-left:30px!important;
+}
+.padding-right-20{
+    padding-right:30px!important;text-align:left !important;
+}
+table th,table td{color:#803717 !important;}
+.incomeFooter{
+    height:226px;
+    background-color:#f3e7bf;
+}
+.totalPrice{
+    width:215px;
+    height:50px;
+    line-height:50px;
+    background:#f2f1d3;
+    border-radius:3px;
+    padding-left:20px;
+    margin-top:25px;
+    margin-left:10px;
+    font-size:22px;
+    color:#c23e29;
+}
+.cashier{
+    width:215px;
+    height:50px;
+    line-height:50px;
+    background:#c23e29;
+    margin-top:10px;
+    border-radius:3px;
+    box-shadow: 0 0 1px 1px rgba(23, 23, 23, 0.8);
+    margin-left:10px;
+    text-align:center;
+    color:white;
+    font-size:22px;
+    background-image:url("../images/cash.png");
+    background-repeat: no-repeat;
+    background-position: 60px center;
+    margin-bottom:10px;
+}
+.form-group{
+    width:210px !important;
+    border-radius:30px!important;
+}
+#inputSuccess5{
+    color:#333;
+}
+#search{
+   margin-left:20px;
+    border:none;
+    background-color:white;
+    width:30px;
+    height:30px;
+    border-radius:50% ;
+}
+.form-inline{
+    margin-top:20px;
+}
+.memberInfo{
+    margin-top:10px;
+    color:#c23e29;
+}
+.right-header{
+    height:45px;background:url("../images/bg03.png")
+}
+.nav-tabs>li{margin-right:2px;background:#ecbd85;border-top-left-radius: 2px;border-top-right-radius:2px;}
+.nav-tabs>li>a{color:#88491d}
+.nav-tabs>li.active{background:#c6412e}
+.nav-tabs>li {
+    margin-bottom:-3px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: 0;
+    color:white;
+    background:#c6412e;
+}
+.nav-tabs>li:hover{
+    background:#c6412e;
+}
+.nav-tabs {
+    border:none;
+    margin-left:50px;
+}
+.active{color:blue;}
+.tab-content{
+    background:url("../images/bg04.png") no-repeat 0 -10px;
+    height:570px;
+    box-shadow:0 0 2px 2px rgba(0, 0, 0, 0.53);
+    margin-left:-5px;
+    position:absolute;
+}
+#tc10,#tc20,#tc30{
+    margin-left:55px;
+    margin-top:30px;
+}
+#tc10 dl{float:left;border:1px solid #f8e8d1;height:70px;margin-right:1.5%;box-shadow:2px 2px #f8eee6   }
+#tc10 dl dt{color:#c6412e;padding-top:15px;}
+#tc10 dl dd{color:#666;}
+#tc10 dl.active{
+    border-color:#c6412e;
+    background:url('../images/icon01.png') no-repeat;
+}
+.rightFooter{
+    height: 100%;
+    position:absolute;
+    bottom:0px;
+}
+.footer {position: absolute;bottom: 0;margin-left:50px;margin-bottom: -3px;}
+.footer li{float:left;list-style:none;}
